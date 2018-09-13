@@ -26,6 +26,7 @@ public class Alfabeto implements IValidable {
         // TODO implement here
         boolean result = false;
         if (simbolos.contains(s)){
+            result = true;
             return result;
         }
         return result;
