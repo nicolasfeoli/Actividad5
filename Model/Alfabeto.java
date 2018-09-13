@@ -13,20 +13,10 @@ public class Alfabeto implements IValidable {
     public Alfabeto() {
     }
 
-    /**
-     * 
-     */
+
     private int id;
-
-    /**
-     * 
-     */
     private String nombre;
-
-    /**
-     * 
-     */
-    private String simbolos;
+    private ArrayList<String> simbolos;
 
     /**
      * @param s 
@@ -34,7 +24,11 @@ public class Alfabeto implements IValidable {
      */
     public boolean validar(String s) {
         // TODO implement here
-        return false;
+        boolean result = false;
+        if (simbolos.contains(s)){
+            return result;
+        }
+        return result;
     }
 
     /**
